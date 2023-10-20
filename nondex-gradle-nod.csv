@@ -60,4 +60,5 @@ https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,customer-service,tw.hankli.customerservice.CustomerServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,discovery-service,tw.hankli.discoveryservice.DiscoveryServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,gateway-service,tw.hankli.gatewayservice.GatewayServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
+https://github.com/victornc83/sb-demo,5330aa72bed9710485fc292956af94a51e15f420,.,com.victornieto.SbDemoApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 
