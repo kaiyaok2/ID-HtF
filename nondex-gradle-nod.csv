@@ -55,4 +55,9 @@ https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch
 https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch.so.agi.gretl.steps.PublisherStepFile2LocalTest.file_allNew_groom,[iox-ili]Iom_jObject
 https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch.so.agi.gretl.steps.PublisherStepFile2LocalTest.file_firstHistory,[iox-ili]Iom_jObject
 https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch.so.agi.gretl.steps.PublisherStepFile2LocalTest.file_regionsUpdate,[iox-ili]Iom_jObject
+https://github.com/androidjp/spring-boot-gradle-redis-web,c94f7f7bb1c28a8a7c44c39c5fc593fa579252e2,.,com.jp.springbootgradleredisweb.SpringBootGradleRedisWebA,[spring-boot]MockitoPostProcessor
+https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,account-service,tw.hankli.accountservice.AccountServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
+https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,customer-service,tw.hankli.customerservice.CustomerServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
+https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,discovery-service,tw.hankli.discoveryservice.DiscoveryServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
+https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,gateway-service,tw.hankli.gatewayservice.GatewayServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 
