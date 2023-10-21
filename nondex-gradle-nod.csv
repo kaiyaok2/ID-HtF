@@ -61,4 +61,8 @@ https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,discovery-service,tw.hankli.discoveryservice.DiscoveryServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,gateway-service,tw.hankli.gatewayservice.GatewayServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/victornc83/sb-demo,5330aa72bed9710485fc292956af94a51e15f420,.,com.victornieto.SbDemoApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
+https://github.com/reyerizo/jcstress-gradle-plugin,f49359c12592e28c1ace7dcdda45f3b015cec736,.,"com.github.erizo.gradle.JcstressPluginSpec.should include a class from jcstress sourceSet in jcstress jar",[gradle]PatternSpecFactory
+https://github.com/reyerizo/jcstress-gradle-plugin,f49359c12592e28c1ace7dcdda45f3b015cec736,.,"com.github.erizo.gradle.JcstressPluginSpec.should include a resource from jcstress sourceSet in jcstress jar",[gradle]PatternSpecFactory
+https://github.com/reyerizo/jcstress-gradle-plugin,f49359c12592e28c1ace7dcdda45f3b015cec736,.,"com.github.erizo.gradle.JcstressPluginSpec.should include a class from test sourceSet in jcstress jar when test enabled",[gradle]PatternSpecFactory
+https://github.com/reyerizo/jcstress-gradle-plugin,f49359c12592e28c1ace7dcdda45f3b015cec736,.,"com.github.erizo.gradle.JcstressPluginSpec.should not include a class from test sourceSet in jcstress jar when test disabled",[gradle]PatternSpecFactory
 
