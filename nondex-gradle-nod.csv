@@ -1,5 +1,4 @@
 Project URL,SHA Detected,Module Path,Fully-Qualified Test Name (packageName.ClassName.methodName),Source
-
 https://github.com/androidjp/spring-boot-gradle-redis-web,c94f7f7bb1c28a8a7c44c39c5fc593fa579252e2,.,com.jp.springbootgradleredisweb.SpringBootGradleRedisWebApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/beryx/badass-jlink-plugin,f293e39fcf481e755a03ab7267f6fe55657bcaaf,.,"org.beryx.jlink.JlinkPluginSpec.""should adjust qualified opens in module-info""",[gradle]PatternSpecFactory
 https://github.com/beryx/badass-jlink-plugin,f293e39fcf481e755a03ab7267f6fe55657bcaaf,.,"org.beryx.jlink.JlinkPluginSpec.""should be compatible with the new JPMS features introduced in Gradle 6.4""",[gradle]PatternSpecFactory
@@ -305,3 +304,8 @@ https://github.com/zeroturnaround/gradle-jrebel-plugin,dbbd544bbe36a078d5d5ea2ce
 https://github.com/zeroturnaround/gradle-jrebel-plugin,dbbd544bbe36a078d5d5ea2cef56bc34c10476c7,.,org.zeroturnaround.jrebel.gradle.test.IncrementalFunctionalIntegrationTest.testSecondBuildIsSkippedWhenNoChange[7],[gradle]PatternSpecFactory
 https://github.com/zeroturnaround/gradle-jrebel-plugin,dbbd544bbe36a078d5d5ea2cef56bc34c10476c7,.,org.zeroturnaround.jrebel.gradle.test.IncrementalFunctionalIntegrationTest.testShowXmlChangeTriggersRebuild[7],[gradle]PatternSpecFactory
 https://github.com/zeroturnaround/gradle-jrebel-plugin,dbbd544bbe36a078d5d5ea2cef56bc34c10476c7,.,org.zeroturnaround.jrebel.gradle.test.IncrementalFunctionalIntegrationTest.testWebBlockChangeTriggersRebuild[7],[gradle]PatternSpecFactory
+https://github.com/gatling/gatling-gradle-plugin,af3d196aeb9b98e1a913dfc53468251ee29ca23d,.,func.WhenPackageSpec.should successfully create a package for gradle version 7.0
+https://github.com/gatling/gatling-gradle-plugin,af3d196aeb9b98e1a913dfc53468251ee29ca23d,.,func.WhenPackageSpec.should successfully create a package for gradle version 7.6.2
+https://github.com/gatling/gatling-gradle-plugin,af3d196aeb9b98e1a913dfc53468251ee29ca23d,.,func.WhenPackageSpec.should successfully create a package for gradle version 8.0
+https://github.com/gatling/gatling-gradle-plugin,af3d196aeb9b98e1a913dfc53468251ee29ca23d,.,func.WhenPackageSpec.should successfully create a package for gradle version 8.2.1
+https://github.com/gatling/gatling-gradle-plugin,af3d196aeb9b98e1a913dfc53468251ee29ca23d,.,func.WhenPackageSpec.should successfully create a package for gradle version 8.4
