@@ -55,6 +55,18 @@ https://github.com/corda/corda-gradle-plugins,3d5218466ad3b5ad129cce1a957a6befdc
 https://github.com/corda/corda-gradle-plugins,3d5218466ad3b5ad129cce1a957a6befdcaef4f2,quasar-utils,net.corda.plugins.quasar.QuasarPluginTest.testEnableDebugOption,[gradle]PatternSpecFactory
 https://github.com/corda/corda-gradle-plugins,3d5218466ad3b5ad129cce1a957a6befdcaef4f2,quasar-utils,net.corda.plugins.quasar.QuasarPluginTest.testEnableVerboseOption,[gradle]PatternSpecFactory
 https://github.com/corda/corda-gradle-plugins,3d5218466ad3b5ad129cce1a957a6befdcaef4f2,quasar-utils,net.corda.plugins.quasar.QuasarPluginTest.testExcludeClassLoaders,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.DiffMessageFormatterTest.customRunToFixMessage,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.DiffMessageFormatterTest.lineEndingProblem,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.DiffMessageFormatterTest.longFile,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.DiffMessageFormatterTest.manyFiles,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.DiffMessageFormatterTest.manyManyFiles,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.DiffMessageFormatterTest.multipleFiles,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.DiffMessageFormatterTest.whitespaceProblem,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.FileTreeTest.absolutePathDoesntWork,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.FileTreeTest.relativePathDoes,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.PaddedCellTaskTest.paddedCellApplyCheck,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.PaddedCellTaskTest.paddedCellCheckConvergeFailureMsg,[gradle]PatternSpecFactory
+https://github.com/diffplug/spotless,51ee9d4def6b8b782a619b0a1b924dfc7b83e2e5,plugin-gradle,com.diffplug.gradle.spotless.PaddedCellTaskTest.paddedCellCheckCycleFailureMsg,[gradle]PatternSpecFactory
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,account-service,tw.hankli.accountservice.AccountServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,customer-service,tw.hankli.customerservice.CustomerServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/HankLi0130/MicroservicesDemo,061d266b8bdede5af966778d7fe4ef30c4faa203,discovery-service,tw.hankli.discoveryservice.DiscoveryServiceApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
@@ -261,6 +273,7 @@ https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch
 https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch.so.agi.gretl.steps.PublisherStepFile2LocalTest.file_regionsList,[iox-ili]Iom_jObject
 https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch.so.agi.gretl.steps.PublisherStepFile2LocalTest.file_regionsRegEx,[iox-ili]Iom_jObject
 https://github.com/sogis/gretl,9f547d3440f73c3d58a949c11f1c59cde9e68758,gretl,ch.so.agi.gretl.steps.PublisherStepFile2LocalTest.file_regionsUpdate,[iox-ili]Iom_jObject
+https://github.com/tkgregory/gradle-pandoc-plugin,5f57bb7c8d03a82235155ebc12e1e1028a2711e0,.,"com.tomgregory.gradle.pandoc.PandocPluginFunctionalTest.""builds complex PDF with custom Docker image""",[gradle]PatternSpecFactory
 https://github.com/victornc83/sb-demo,5330aa72bed9710485fc292956af94a51e15f420,.,com.victornieto.SbDemoApplicationTests.contextLoads,[spring-boot]MockitoPostProcessor
 https://github.com/zeroturnaround/gradle-jrebel-plugin,dbbd544bbe36a078d5d5ea2cef56bc34c10476c7,.,org.zeroturnaround.jrebel.gradle.test.IncrementalFunctionalIntegrationTest.testAlwaysGenerateChangeTriggersRebuild[7],[gradle]PatternSpecFactory
 https://github.com/zeroturnaround/gradle-jrebel-plugin,dbbd544bbe36a078d5d5ea2cef56bc34c10476c7,.,org.zeroturnaround.jrebel.gradle.test.IncrementalFunctionalIntegrationTest.testAlwaysGenerateTriggersRebuild[7],[gradle]PatternSpecFactory
