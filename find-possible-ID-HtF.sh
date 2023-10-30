@@ -1,21 +1,22 @@
-./gradlew nondexTest -i >  NonDexFullInfo.log
+#./gradlew nondexTest -i >  NonDexFullInfo.log
 GIDErrorString="Cannot change default excludes during the build. They were changed from"
 grep -r "$GIDErrorString" NonDexFullInfo.log > NonDexGID.log
 GIDnum=$(wc -l <  NonDexGID.log)
 tac NonDexFullInfo.log > reversedFullInfo.log
-./gradlew nondexTest >  NonDex.log
+#./gradlew nondexTest >  NonDex.log
 grep -v " PASSED" NonDex.log > tmpfile && mv tmpfile NonDex.log
+grep -v " STANDARD_OUT" NonDex.log > tmpfile && mv tmpfile NonDex.log
 sed -i '' 's/ \> /\./g'  NonDex.log
 sed -i '' 's/ \> /\./g'  reversedFullInfo.log
 [ -e  NonDexReportedTests.txt ] && rm  NonDexReportedTests.txt
 [ -e  RemainingTestsFailingReasons.tmp ] && rm  RemainingTestsFailingReasons.tmp
-sed -n -e '/Across all seeds:/,/Test results can be found at: / p'  NonDex.log | sed -e '1d;$d' | gcut -f1 -d' ' --complement | tr -d '()'| while read line;do echo ${line};done >  NonDexReportedTests.txt
+sed -n -e '/Across all seeds:/,/Test results can be found at: / p'  NonDex.log | sed -e '1d;$d' | gcut -f1 -d' ' --complement |  while read line;do echo ${line};done >  NonDexReportedTests.txt
 testNum=$(wc -l <  NonDexReportedTests.txt)
+cp NonDexReportedTests.txt remainingTests.tmp
 if [[ "$GIDnum" -gt "0" ]]; then
     if [[ "$testNum" -gt "0" ]]; then
         info=" is extremely likely an ID-HtF test due to Gradle flakiness"
         echo It is extremely likely that there are ID-HtF tests due to Gradle flakiness
-        cp NonDexReportedTests.txt remainingTests.tmp
         echo "" >> remainingTests.tmp
         workingOnInstance=1
         cat reversedFullInfo.log | while read line; do
@@ -46,8 +47,8 @@ if [[ "$GIDnum" -gt "0" ]]; then
             fi
         done
     fi
+    head -n -1 remainingTests.tmp > tmpfile && mv tmpfile remainingTests.tmp
 fi
-head -n -1 remainingTests.tmp > tmpfile && mv tmpfile remainingTests.tmp
 echo $(wc -l <  remainingTests.tmp)
 touch RemainingTestsFailingReasons.tmp
 if [[ "$testNum" -gt "0" ]]; then
@@ -61,12 +62,14 @@ if [[ "$testNum" -gt "0" ]]; then
                 break
             fi
             trimmedCurLine=$(echo "$curLine" | awk '{$NF="";sub(/[ \t]+$/,"")}1')
-            if [[ -n "${trimmedCurLine// /}" ]]; then 
-                if [[ "$line" = *"$trimmedCurLine"* ]]; then
+            if [[ -n "${trimmedCurLine// /}" ]]; then
+                echo "$trimmedCurLine"
+                echo "$line"
+                if [[ "$trimmedCurLine" = *"$line"* ]]; then
                     found=$((found-1))
                 fi
                 camelCaseTrimmedCurLine=$( echo "$trimmedCurLine" | awk 'BEGIN{OFS=""};{for(j=1;j<=NF;j++){ if(j!=1){$j=toupper(substr($j,1,1)) substr($j,2) }}}1')
-                if [[ "$line" = *"$camelCaseTrimmedCurLine"* ]]; then
+                if [[ "$camelCaseTrimmedCurLine" = *"$line"* ]]; then
                     found=$((found-1))
                 fi
             fi
@@ -89,7 +92,7 @@ x=1;while  [[ $x -le $remainingTestNum ]]; do
     fi
     x=$((x+1));
 done
-cat remainingTests.tmp
-rm remainingTests.tmp
-rm NonDexReportedTests.txt
-rm RemainingTestsFailingReasons.tmp
+#cat remainingTests.tmp
+#rm remainingTests.tmp
+#rm NonDexReportedTests.txt
+#rm RemainingTestsFailingReasons.tmp
