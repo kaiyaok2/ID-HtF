@@ -1,5 +1,4 @@
 path=$(pwd)
-echo $path
 result_file=${path}/result.csv
 
 
@@ -14,19 +13,23 @@ function download_compile() {
     cd $dir
 
 	chmod +x gradlew
-    # ----------------------------------------------------check gradle version--------------------------------------------------------#
+    # -------------------------------NonDex 2.1.1 supports gradle 5.0 ~ 8.3, so change Gradle version if not in the range.--------------------------------------------------------#
 	ver=$(grep distributionUrl gradle/wrapper/gradle-wrapper.properties | sed 's/.*gradle-//' | cut -f1 -d-)
 	echo gradle version: $ver
 	bigger_ver=$(printf "$ver\n5.0" | sort -rV | head -n 1)
-	version_change=F
-	if [[ "$ver" != "$bigger_ver" ]]; then # the version is smaller than 5.0
-		version_change=T
+	smaller_ver=$(printf "$ver\n8.3" | sort -V | head -n 1)
+	if [[ "$bigger_ver" != "$smaller_ver" ]]; then # the version is not in range 5.0 ~ 8.3
+		if [[ "$ver" != "$bigger_ver" ]]; then
+			new_ver="5.0"
+		else
+			new_ver="8.3"
+		fi
 		original_wrapper_file=gradle/wrapper/gradle-wrapper.properties
 		sed -i '' 's/distributionUrl.*//' ${original_wrapper_file}
-		echo "distributionUrl=https\://services.gradle.org/distributions/gradle-5.0-bin.zip" >> gradle/wrapper/gradle-wrapper.properties
-		if [ $? == 0 ]; then # there is a wrapper block
-			build_file=build.gradle
-			sed -i '' 's/.*gradleVersion.*/    gradleVersion = "5.0"/' ${build_file} 
+		echo "distributionUrl=https\://services.gradle.org/distributions/gradle-${new_ver}-bin.zip" >> ${original_wrapper_file}
+		build_file=build.gradle
+		if grep -q "wrapper" ${build_file} ; then # there is a wrapper block
+			sed -i '' "s/.*gradleVersion.*/    gradleVersion = \"$new_ver\"/" ${build_file} 
 		fi
 	fi
 
@@ -89,10 +92,18 @@ function download_compile() {
 		fi
         # -----------------------------------------------------run nondexTest--------------------------------------------------------------#
         echo ========== try to run nondexTest
-		./gradlew clean	# so always run nondexTest even if the last run is a success
+		./gradlew clean	> /dev/null # so always run nondexTest even if the last run is a success
+		cur_project_test_count=0
 		if [[ $sub == 0 ]]; then	# no subprojects
 			total_tests=$(./gradlew cleanTest test --no-build-cache | grep "+++Result" | gcut -f3 -d' ')
-			if [[ ${total_tests} == '' ]]; then total_tests=",,,"; echo "========== error with tests in $1";fi
+			if [[ ${total_tests} == '' ]]; then 
+				total_tests=",,," 
+				echo "========== error with tests in $1"
+			else 
+				total_tests_arr=($(echo "$total_tests" | tr ',' '\n'))
+				total_tests_not_ignored=$((total_tests_arr[0]-total_tests_arr[3]))
+				cur_project_test_count=$((cur_project_test_count+total_tests_not_ignored))
+			fi
 			echo "========== run NonDex on $1"
 			./gradlew nondexTest --nondexRuns=50 1> nondex.log 2> nondex-err.log
 			if ( grep "NonDex SUMMARY:" nondex.log ); then # if nondexTest is actually executed
@@ -112,7 +123,14 @@ function download_compile() {
 		else	# run each subprojects separately, cuz nondex generate summary report for each subprojects
 			for p in ${projects}; do 
 				total_tests=$(./gradlew :$p:cleanTest :$p:test --no-build-cache | grep "+++Result" | gcut -f3 -d' ')
-				if [[ ${total_tests} == '' ]]; then total_tests=",,,"; echo "========== error with tests in $1:$p";fi
+				if [[ ${total_tests} == '' ]]; then 
+					total_tests=",,," 
+					echo "========== error with tests in $1:$p" 
+				else 
+					total_tests_arr=($(echo "$total_tests" | tr ',' '\n'))
+					total_tests_not_ignored=$((total_tests_arr[0]-total_tests_arr[3]))
+					cur_project_test_count=$((cur_project_test_count+total_tests_not_ignored))
+				fi
 				echo "========== run NonDex on $1:$p"
 				./gradlew :$p:nondexTest  --nondexRuns=3 1> nondex:$p.log 2> nondex-err:$p.log
 				if ( grep "NonDex SUMMARY:" nondex:$p.log ); then # if nondexTest is actually executed
@@ -131,6 +149,7 @@ function download_compile() {
 				printf '%b\n' "$1:$p,${build},${ver},${flaky_tests},${total_tests},$(( ($(date +%s)-${start_time})/60 ))" | tee -a ${path}/result.csv
 			done
 		fi
+		echo "https://github.com/$1,${sha},${cur_project_test_count}" >> ${path}/project_test_count.csv
     else 
     # ----------------------------------------build fail------------------------------------------------ #
         build="F"
@@ -144,8 +163,10 @@ function download_compile() {
 
 touch result.csv
 touch flaky.csv
+touch project_test_count.csv
 echo "project name,compile,gradle version,flaky tests,total tests,successful tests,failed tests,skipped tests,time (minutes)" > result.csv
 echo "Project URL,SHA Detected,Subproject Name,Fully-Qualified Test Name (packageName.ClassName.methodName)" > flaky.csv
+echo "Project URL,SHA Detected,Test Count" > project_test_count.csv
 mkdir error_log
 for f in $(cat $1); do
     echo ========== trying to download $f
