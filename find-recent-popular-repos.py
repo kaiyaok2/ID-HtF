@@ -21,4 +21,4 @@ if __name__ == '__main__':
         r = r.json()
         for item in r['items']:
             f.write(item["full_name"]+"\n")
-        f.close()
+    f.close()
