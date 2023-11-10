@@ -46,7 +46,7 @@ function download_compile() {
 		echo ========= projects: ${projects}
 		buildFile=$(./gradlew properties | grep buildFile | awk '{print $2}')
 		# ----------count total tests-------------------- #
-		echo 'allprojects {
+		echo '\nallprojects {
   			tasks.withType(Test) {
     			testLogging {
       				afterSuite { desc, result ->
