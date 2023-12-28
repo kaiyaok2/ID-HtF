@@ -13,16 +13,16 @@ function download_compile() {
     cd $dir
 
 	chmod +x gradlew
-    # -------------------------------NonDex 2.1.1 supports gradle 5.0 ~ 8.3, so change Gradle version if not in the range.--------------------------------------------------------#
+    # -------------------------------NonDex 2.1.7 supports gradle 5.0 ~ 8.4, so change Gradle version if not in the range.--------------------------------------------------------#
 	ver=$(grep distributionUrl gradle/wrapper/gradle-wrapper.properties | sed 's/.*gradle-//' | cut -f1 -d-)
 	echo gradle version: $ver
 	bigger_ver=$(printf "$ver\n5.0" | sort -rV | head -n 1)
-	smaller_ver=$(printf "$ver\n8.3" | sort -V | head -n 1)
-	if [[ "$bigger_ver" != "$smaller_ver" ]]; then # the version is not in range 5.0 ~ 8.3
+	smaller_ver=$(printf "$ver\n8.4" | sort -V | head -n 1)
+	if [[ "$bigger_ver" != "$smaller_ver" ]]; then # the version is not in range 5.0 ~ 8.4
 		if [[ "$ver" != "$bigger_ver" ]]; then
 			new_ver="5.0"
 		else
-			new_ver="8.3"
+			new_ver="8.4"
 		fi
 		original_wrapper_file=gradle/wrapper/gradle-wrapper.properties
 		sed -i '' 's/distributionUrl.*//' ${original_wrapper_file}
@@ -76,7 +76,7 @@ function download_compile() {
     				}
   				}
   				dependencies {
-					classpath('edu.illinois:plugin:2.1.1')
+					classpath('edu.illinois:plugin:2.1.7')
   				}
 			}
 			$(cat ${buildFile})" > ${buildFile}
@@ -105,7 +105,7 @@ function download_compile() {
 				cur_project_test_count=$((cur_project_test_count+total_tests_not_ignored))
 			fi
 			echo "========== run NonDex on $1"
-			./gradlew nondexTest --nondexRuns=50 1> nondex.log 2> nondex-err.log
+			./gradlew nondexTest --nondexRuns=4 1> nondex.log 2> nondex-err.log
 			if ( grep "NonDex SUMMARY:" nondex.log ); then # if nondexTest is actually executed
 				flaky_tests=$(sed -n -e '/Across all seeds:/,/Test results can be found at: / p' nondex.log | sed -e '1d;$d' | wc -l)
 				if [[ $flaky_tests != '0' ]]; then 
@@ -132,7 +132,7 @@ function download_compile() {
 					cur_project_test_count=$((cur_project_test_count+total_tests_not_ignored))
 				fi
 				echo "========== run NonDex on $1:$p"
-				./gradlew :$p:nondexTest  --nondexRuns=3 1> nondex:$p.log 2> nondex-err:$p.log
+				./gradlew :$p:nondexTest  --nondexRuns=4 1> nondex:$p.log 2> nondex-err:$p.log
 				if ( grep "NonDex SUMMARY:" nondex:$p.log ); then # if nondexTest is actually executed
 					flaky_tests=$(sed -n -e '/Across all seeds:/,/Test results can be found at: / p' nondex:$p.log | sed -e '1d;$d' | wc -l)
 					if [[ $flaky_tests != '0' ]]; then
