@@ -17,7 +17,7 @@ function download_compile() {
 	ver=$(grep distributionUrl gradle/wrapper/gradle-wrapper.properties | sed 's/.*gradle-//' | cut -f1 -d-)
 	echo gradle version: $ver
 	bigger_ver=$(printf "$ver\n5.0" | sort -rV | head -n 1)
-	smaller_ver=$(printf "$ver\n8.4" | sort -V | head -n 1)
+	smaller_ver=$(printf "$ver\n8.5" | sort -V | head -n 1)
 	if [[ "$bigger_ver" != "$smaller_ver" ]]; then # the version is not in range 5.0 ~ 8.5
 		if [[ "$ver" != "$bigger_ver" ]]; then
 			new_ver="5.0"
