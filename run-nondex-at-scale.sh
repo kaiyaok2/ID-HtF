@@ -72,11 +72,11 @@ function download_compile() {
         	echo "buildscript {
 				repositories {
 					maven {
-    					url = uri('https://plugins.gradle.org/m2/')
+    					url = uri("https://plugins.gradle.org/m2/")
     				}
   				}
   				dependencies {
-					classpath('edu.illinois:plugin:2.1.7')
+					classpath("edu.illinois:plugin:2.1.7")
   				}
 			}
 			$(cat ${buildFile})" > ${buildFile}
