@@ -20,7 +20,7 @@ if [ $? != 0 ]; then
             }
         }
         dependencies {
-            classpath('edu.illinois:plugin:2.1.1')
+            classpath('edu.illinois:plugin:2.1.7')
         }
     }
     $(cat ${buildFile})" > ${buildFile}
