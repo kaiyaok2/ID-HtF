@@ -13,16 +13,16 @@ function download_compile() {
     cd $dir
 
 	chmod +x gradlew
-    # -------------------------------NonDex 2.1.7 supports gradle 5.0 ~ 8.4, so change Gradle version if not in the range.--------------------------------------------------------#
+    # -------------------------------NonDex 2.1.7 supports gradle 5.0 ~ 8.5, so change Gradle version if not in the range.--------------------------------------------------------#
 	ver=$(grep distributionUrl gradle/wrapper/gradle-wrapper.properties | sed 's/.*gradle-//' | cut -f1 -d-)
 	echo gradle version: $ver
 	bigger_ver=$(printf "$ver\n5.0" | sort -rV | head -n 1)
 	smaller_ver=$(printf "$ver\n8.4" | sort -V | head -n 1)
-	if [[ "$bigger_ver" != "$smaller_ver" ]]; then # the version is not in range 5.0 ~ 8.4
+	if [[ "$bigger_ver" != "$smaller_ver" ]]; then # the version is not in range 5.0 ~ 8.5
 		if [[ "$ver" != "$bigger_ver" ]]; then
 			new_ver="5.0"
 		else
-			new_ver="8.4"
+			new_ver="8.5"
 		fi
 		original_wrapper_file=gradle/wrapper/gradle-wrapper.properties
 		sed -i '' 's/distributionUrl.*//' ${original_wrapper_file}
