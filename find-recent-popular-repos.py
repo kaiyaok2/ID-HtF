@@ -17,7 +17,8 @@ if __name__ == '__main__':
     f = open("repos.txt", "x")
 
     for page in range(int(pages)):
-        r = session.get("https://api.github.com/search/repositories?q=gradle+in:topic+" + filter + "&per_page=100&sort=stars&order=desc&page=" + str(page + 1))
+        #r = session.get("https://api.github.com/search/repositories?q=gradle+in:topic+" + filter + "&per_page=100&sort=stars&order=desc&page=" + str(page + 1))
+        r = session.get("https://api.github.com/search/repositories?q=gradlew+in:readme+stars:200..200000+&per_page=100&sort=stars&order=desc&page=" + str(page + 1))
         r = r.json()
         for item in r['items']:
             f.write(item["full_name"]+"\n")
