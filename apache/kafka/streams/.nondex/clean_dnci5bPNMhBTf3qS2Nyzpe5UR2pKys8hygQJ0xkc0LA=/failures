@@ -1,4 +1,0 @@
-org.apache.kafka.common.utils.BytesTest.initializationError
-org.apache.kafka.streams.integration.KTableKTableForeignKeyInnerJoinMultiIntegrationTest.initializationError
-org.apache.kafka.streams.integration.QueryableStateIntegrationTest.initializationError
-org.apache.kafka.streams.integration.StandbyTaskCreationIntegrationTest.initializationError

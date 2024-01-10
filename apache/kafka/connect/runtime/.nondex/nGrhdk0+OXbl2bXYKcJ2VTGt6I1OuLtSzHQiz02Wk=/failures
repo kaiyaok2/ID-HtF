@@ -1,7 +1,0 @@
-org.apache.kafka.connect.runtime.WorkerTest.testResetOffsetsSourceConnectorExactlyOnceSupportEnabled[0]
-org.apache.kafka.connect.runtime.WorkerTest.testResetOffsetsSourceConnectorExactlyOnceSupportEnabled[1]
-org.apache.kafka.connect.runtime.distributed.ConnectProtocolCompatibilityTest.testCoopToEagerAssignment
-org.apache.kafka.connect.runtime.distributed.ConnectProtocolCompatibilityTest.testEagerToCoopAssignment
-org.apache.kafka.connect.runtime.distributed.WorkerCoordinatorTest.testLeaderPerformAssignmentSingleTaskConnectors[0]
-org.apache.kafka.connect.runtime.distributed.WorkerCoordinatorTest.testLeaderPerformAssignmentSingleTaskConnectors[1]
-org.apache.kafka.connect.runtime.rest.ConnectRestServerTest.testOptionsDoesNotIncludeWadlOutput
