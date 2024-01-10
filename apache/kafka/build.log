@@ -1,0 +1,124 @@
+Starting a Gradle Daemon, 3 incompatible Daemons could not be reused, use --status for details
+
+> Configure project :
+Starting build with version 3.8.0-SNAPSHOT (commit id cd1eb634) using Gradle 8.5, Java 11 and Scala 2.13.12
+Build properties: maxParallelForks=8, maxScalacThreads=8, maxTestRetries=0
+
+> Task :tasks
+
+------------------------------------------------------------
+Tasks runnable from root project 'kafka'
+------------------------------------------------------------
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the classes of the 'main' feature.
+testClasses - Assembles test classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+wrapper - Generates Gradle wrapper files.
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the 'main' feature.
+scaladoc - Generates Scaladoc for the main source code.
+
+Gradle Enterprise tasks
+-----------------------
+buildScanPublishPrevious - Publishes the data captured by the last build.
+provisionGradleEnterpriseAccessKey - Provisions a new access key for this build environment.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'kafka'.
+dependencies - Displays all dependencies declared in root project 'kafka'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'kafka'.
+dependencyUpdates - Displays the dependency updates for the project.
+help - Displays a help message.
+javaToolchains - Displays the detected java toolchains.
+outgoingVariants - Displays the outgoing variants of root project 'kafka'.
+projects - Displays the sub-projects of root project 'kafka'.
+properties - Displays the properties of root project 'kafka'.
+resolvableConfigurations - Displays the configurations that can be resolved in root project 'kafka'.
+tasks - Displays the tasks runnable from root project 'kafka' (some of the displayed tasks may belong to subprojects).
+
+IDE tasks
+---------
+cleanEclipse - Cleans all Eclipse files.
+cleanIdea - Cleans IDEA project files (IML, IPR)
+eclipse - Generates all Eclipse files.
+idea - Generates IDEA project files (IML, IPR, IWS)
+openIdea - Opens the IDEA project
+
+NonDex tasks
+------------
+nondexClean - Clean Nondex jar and directory
+nondexDebug - Debug with NonDex
+nondexTest - Test with NonDex
+
+OWASP dependency-check tasks
+----------------------------
+dependencyCheckAggregate - Identifies and reports known vulnerabilities (CVEs) in multi-project dependencies.
+dependencyCheckAnalyze - Identifies and reports known vulnerabilities (CVEs) in project dependencies.
+dependencyCheckPurge - Purges the local cache of the NVD.
+dependencyCheckUpdate - Downloads and stores updates from the NVD CVE data feeds.
+
+Publishing tasks
+----------------
+generateMetadataFileForMavenJavaPublication - Generates the Gradle metadata file for publication 'mavenJava'.
+generatePomFileForMavenJavaPublication - Generates the Maven POM file for publication 'mavenJava'.
+publish - Publishes all publications produced by this project.
+publishAllPublicationsToMavenRepository - Publishes all Maven publications produced by this project to the maven repository.
+publishMavenJavaPublicationToMavenLocal - Publishes Maven publication 'mavenJava' to the local Maven repository.
+publishMavenJavaPublicationToMavenRepository - Publishes Maven publication 'mavenJava' to Maven repository 'maven'.
+publishToMavenLocal - Publishes all Maven publications produced by this project to the local Maven cache.
+
+Shadow tasks
+------------
+knows - Do you know who knows?
+shadowJar - Create a combined JAR of project and runtime dependencies
+
+Verification tasks
+------------------
+check - Runs all checks.
+checkstyleMain - Run checkstyle on all main Java sources
+checkstyleTest - Run checkstyle on all test Java sources
+jacocoTestCoverageVerification - Verifies code coverage metrics based on specified rules for the test task.
+jacocoTestReport - Generates code coverage report for the test task.
+rat - Runs Apache Rat audit tool
+spotbugsMain - Run SpotBugs analysis for the source set 'main'
+spotbugsTest - Run SpotBugs analysis for the source set 'test'
+spotlessApply - Applies code formatting steps to sourcecode in-place.
+spotlessCheck - Checks that sourcecode satisfies formatting steps.
+spotlessDiagnose
+spotlessScala
+spotlessScalaApply
+spotlessScalaCheck
+spotlessScalaDiagnose
+test - Runs the test suite.
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+
+To see all tasks and more detail, run gradlew tasks --all
+
+To see more detail about a task, run gradlew help --task <task>
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 7s
+1 actionable task: 1 executed

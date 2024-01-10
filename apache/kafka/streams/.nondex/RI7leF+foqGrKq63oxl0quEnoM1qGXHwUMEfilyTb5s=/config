@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/streams/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/streams/.nondex
+nondexExecid=RI7leF+foqGrKq63oxl0quEnoM1qGXHwUMEfilyTb5s=
+nondexLogging=CONFIG
+test=

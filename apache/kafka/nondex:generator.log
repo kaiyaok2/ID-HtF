@@ -1,0 +1,105 @@
+
+> Configure project :
+Starting build with version 3.8.0-SNAPSHOT (commit id cd1eb634) using Gradle 8.5, Java 11 and Scala 2.13.12
+Build properties: maxParallelForks=8, maxScalacThreads=8, maxTestRetries=0
+
+> Task :generator:compileJava UP-TO-DATE
+> Task :generator:processResources NO-SOURCE
+> Task :generator:classes UP-TO-DATE
+> Task :generator:compileTestJava UP-TO-DATE
+> Task :generator:processTestResources NO-SOURCE
+> Task :generator:testClasses UP-TO-DATE
+
+> Task :generator:nondexTest
+INFO: The original argline is: [-Xss4m, -XX:+UseParallelGC, -Xmx2g, -Dfile.encoding=UTF-8, -Duser.country=CN, -Duser.language=zh, -Duser.variant, -ea]
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_F7UewMoVl89AUgzyvX7GsrfNa5fWR9rR7Wm6AjH3Pk=
+nondexLogging=CONFIG
+test=
++++Results: SUCCESS 0,0,0,0
++++Results: SUCCESS 0,0,0,0
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexExecid=V4WjFDIQ8MX0AOiTIGidMKEu95UOiWLnZuAtas1PA=
+nondexLogging=CONFIG
+test=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexExecid=ejwxByFa47mMXYlPNsgVaMaKvpVWaE5FnjTA4kFf1g=
+nondexLogging=CONFIG
+test=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexExecid=IU6uyylnS0Vx5hPy4cvgKBhxSZuA3LuIZ32H85dMaTk=
+nondexLogging=CONFIG
+test=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1057510
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex
+nondexExecid=9zhx4oibL2K6eYOXgf4bc4eI8BeWnkhdTFKOeBiuYq8=
+nondexLogging=CONFIG
+test=
++++Results: SUCCESS 0,0,0,0
++++Results: SUCCESS 0,0,0,0
+INFO: NonDex SUMMARY:
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexExecid=V4WjFDIQ8MX0AOiTIGidMKEu95UOiWLnZuAtas1PA= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexExecid=ejwxByFa47mMXYlPNsgVaMaKvpVWaE5FnjTA4kFf1g= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexExecid=IU6uyylnS0Vx5hPy4cvgKBhxSZuA3LuIZ32H85dMaTk= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1057510 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex" -DnondexExecid=9zhx4oibL2K6eYOXgf4bc4eI8BeWnkhdTFKOeBiuYq8= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: All tests pass without NonDex shuffling
+INFO: ####################
+INFO: Across all seeds:
+INFO: Test results can be found at: 
+INFO: file:///Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/generator/.nondex/V4WjFDIQ8MX0AOiTIGidMKEu95UOiWLnZuAtas1PA=/test_results.html
+INFO: [NonDex] The id of this run is: V4WjFDIQ8MX0AOiTIGidMKEu95UOiWLnZuAtas1PA=
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 1 executed, 2 up-to-date

@@ -1,0 +1,5 @@
+org.apache.kafka.connect.runtime.distributed.ConnectProtocolCompatibilityTest.testCoopToEagerAssignment
+org.apache.kafka.connect.runtime.distributed.ConnectProtocolCompatibilityTest.testCoopToCoopAssignment
+org.apache.kafka.connect.runtime.distributed.ConnectProtocolCompatibilityTest.testEagerToEagerAssignment
+org.apache.kafka.connect.runtime.distributed.WorkerCoordinatorTest.testLeaderPerformAssignmentSingleTaskConnectors[1]
+org.apache.kafka.connect.runtime.rest.ConnectRestServerTest.testOptionsDoesNotIncludeWadlOutput

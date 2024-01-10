@@ -1,0 +1,2 @@
+org.apache.kafka.streams.kstream.internals.graph.StreamsGraphTest.shouldNotThrowNPEWithMergeNodes
+org.apache.kafka.streams.kstream.internals.graph.StreamsGraphTest.shouldNotOptimizeWithValueOrKeyChangingOperatorsAfterInitialKeyChange

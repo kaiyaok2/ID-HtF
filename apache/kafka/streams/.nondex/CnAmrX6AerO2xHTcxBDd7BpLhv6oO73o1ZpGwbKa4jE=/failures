@@ -1,0 +1,4 @@
+org.apache.kafka.streams.kstream.internals.graph.StreamsGraphTest.shouldNotThrowNPEWithMergeNodes
+org.apache.kafka.streams.kstream.internals.graph.StreamsGraphTest.shouldNotOptimizeWhenAThroughOperationIsDone
+org.apache.kafka.streams.kstream.internals.graph.StreamsGraphTest.shouldNotOptimizeWhenRepartitionOperationIsDone
+org.apache.kafka.streams.kstream.internals.graph.StreamsGraphTest.shouldOptimizeSeveralMergeNodesWithCommonKeyChangingParent

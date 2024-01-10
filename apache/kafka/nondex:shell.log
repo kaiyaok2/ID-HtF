@@ -1,0 +1,195 @@
+
+> Configure project :
+Starting build with version 3.8.0-SNAPSHOT (commit id cd1eb634) using Gradle 8.5, Java 11 and Scala 2.13.12
+Build properties: maxParallelForks=8, maxScalacThreads=8, maxTestRetries=0
+
+> Task :server:processResources NO-SOURCE
+> Task :server-common:processResources NO-SOURCE
+> Task :server:processTestResources NO-SOURCE
+> Task :server-common:processTestResources UP-TO-DATE
+> Task :storage:storage-api:processResources NO-SOURCE
+> Task :core:processResources UP-TO-DATE
+> Task :metadata:processResources UP-TO-DATE
+> Task :raft:processResources UP-TO-DATE
+> Task :server:createVersionFile UP-TO-DATE
+> Task :group-coordinator:processResources UP-TO-DATE
+> Task :storage:storage-api:processTestResources NO-SOURCE
+> Task :server-common:createVersionFile UP-TO-DATE
+> Task :raft:processTestResources UP-TO-DATE
+> Task :raft:createVersionFile UP-TO-DATE
+> Task :storage:processResources UP-TO-DATE
+> Task :group-coordinator:processTestResources UP-TO-DATE
+> Task :storage:storage-api:createVersionFile UP-TO-DATE
+> Task :storage:createVersionFile UP-TO-DATE
+> Task :tools:tools-api:processResources NO-SOURCE
+> Task :tools:tools-api:createVersionFile UP-TO-DATE
+> Task :core:processTestResources UP-TO-DATE
+> Task :metadata:processTestResources UP-TO-DATE
+> Task :log4j-appender:processResources NO-SOURCE
+> Task :shell:processResources NO-SOURCE
+> Task :shell:processTestResources UP-TO-DATE
+> Task :clients:processResources UP-TO-DATE
+> Task :clients:createVersionFile UP-TO-DATE
+> Task :clients:processTestResources UP-TO-DATE
+> Task :generator:compileJava UP-TO-DATE
+> Task :generator:processResources NO-SOURCE
+> Task :generator:classes UP-TO-DATE
+> Task :generator:jar UP-TO-DATE
+> Task :clients:processMessages UP-TO-DATE
+> Task :core:processMessages UP-TO-DATE
+> Task :storage:processMessages UP-TO-DATE
+> Task :group-coordinator:processMessages UP-TO-DATE
+> Task :raft:processMessages UP-TO-DATE
+> Task :metadata:processMessages UP-TO-DATE
+> Task :clients:compileJava UP-TO-DATE
+> Task :clients:classes UP-TO-DATE
+> Task :clients:processTestMessages UP-TO-DATE
+> Task :tools:tools-api:compileJava UP-TO-DATE
+> Task :tools:tools-api:classes UP-TO-DATE
+> Task :tools:tools-api:jar UP-TO-DATE
+> Task :log4j-appender:compileJava UP-TO-DATE
+> Task :log4j-appender:classes UP-TO-DATE
+> Task :server-common:compileJava UP-TO-DATE
+> Task :log4j-appender:jar UP-TO-DATE
+> Task :server-common:classes UP-TO-DATE
+> Task :server-common:jar UP-TO-DATE
+> Task :server:compileJava UP-TO-DATE
+> Task :server:classes UP-TO-DATE
+> Task :storage:storage-api:compileJava UP-TO-DATE
+> Task :storage:storage-api:classes UP-TO-DATE
+> Task :server:jar UP-TO-DATE
+> Task :clients:compileTestJava UP-TO-DATE
+> Task :raft:compileJava UP-TO-DATE
+> Task :raft:classes UP-TO-DATE
+> Task :storage:storage-api:jar UP-TO-DATE
+> Task :raft:jar UP-TO-DATE
+> Task :metadata:compileJava UP-TO-DATE
+> Task :metadata:classes UP-TO-DATE
+> Task :storage:compileJava UP-TO-DATE
+> Task :metadata:jar UP-TO-DATE
+> Task :storage:classes UP-TO-DATE
+> Task :storage:jar UP-TO-DATE
+> Task :clients:shadowJar UP-TO-DATE
+> Task :clients:jar SKIPPED
+> Task :clients:testClasses UP-TO-DATE
+> Task :group-coordinator:compileJava UP-TO-DATE
+> Task :group-coordinator:classes UP-TO-DATE
+> Task :core:compileJava NO-SOURCE
+> Task :group-coordinator:jar UP-TO-DATE
+> Task :server:compileTestJava UP-TO-DATE
+> Task :server:testClasses UP-TO-DATE
+> Task :storage:storage-api:compileTestJava UP-TO-DATE
+> Task :server-common:compileTestJava UP-TO-DATE
+> Task :storage:storage-api:testClasses UP-TO-DATE
+> Task :server-common:testClasses UP-TO-DATE
+> Task :raft:compileTestJava UP-TO-DATE
+> Task :raft:testClasses UP-TO-DATE
+> Task :group-coordinator:compileTestJava UP-TO-DATE
+> Task :group-coordinator:testClasses UP-TO-DATE
+> Task :metadata:compileTestJava UP-TO-DATE
+> Task :metadata:testClasses UP-TO-DATE
+> Task :core:compileScala UP-TO-DATE
+> Task :core:classes UP-TO-DATE
+> Task :core:compileTestJava NO-SOURCE
+> Task :shell:compileJava UP-TO-DATE
+> Task :shell:classes UP-TO-DATE
+> Task :core:compileTestScala UP-TO-DATE
+> Task :core:copyDependantLibs UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :core:testClasses UP-TO-DATE
+> Task :shell:compileTestJava UP-TO-DATE
+> Task :shell:testClasses UP-TO-DATE
+
+> Task :shell:nondexTest
+INFO: The original argline is: [-Xss4m, -XX:+UseParallelGC, -Xmx2g, -Dfile.encoding=UTF-8, -Duser.country=CN, -Duser.language=zh, -Duser.variant, -ea]
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_zR605Gd7mlOPSHFJJp6VDQFG+mrACU8aZX29p4BtYQ=
+nondexLogging=CONFIG
+test=
++++Results: SUCCESS 0,0,0,0
++++Results: SUCCESS 0,0,0,0
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexExecid=icVJAkcZe+DTNn2UtdWkKM9zz+WjQnZ4qWxc18TgOko=
+nondexLogging=CONFIG
+test=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexExecid=EVqCIByK7KFR9KbEubsvrVI6F6Lqv7yOZ9LVlX1d2cA=
+nondexLogging=CONFIG
+test=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexExecid=0oGpRxVvuNggE0P9OIXEK5hD0yzJ9IsxAXGRscCTM8=
+nondexLogging=CONFIG
+test=
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1057510
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexJarDir=/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex
+nondexExecid=+68cVWVyhGvUleOmGxz4vBQCNjXfvmjYrcD2TsH6E=
+nondexLogging=CONFIG
+test=
++++Results: SUCCESS 0,0,0,0
++++Results: SUCCESS 0,0,0,0
+INFO: NonDex SUMMARY:
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexExecid=icVJAkcZe+DTNn2UtdWkKM9zz+WjQnZ4qWxc18TgOko= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexExecid=EVqCIByK7KFR9KbEubsvrVI6F6Lqv7yOZ9LVlX1d2cA= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexExecid=0oGpRxVvuNggE0P9OIXEK5hD0yzJ9IsxAXGRscCTM8= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: *********
+INFO: gradle nondexTest -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1057510 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexJarDir="/Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex" -DnondexExecid=+68cVWVyhGvUleOmGxz4vBQCNjXfvmjYrcD2TsH6E= -DnondexLogging=CONFIG
+INFO: No Test Failed with this configuration.
+INFO: *********
+INFO: All tests pass without NonDex shuffling
+INFO: ####################
+INFO: Across all seeds:
+INFO: Test results can be found at: 
+INFO: file:///Users/kekaiyao/Desktop/ID-HtF/github.com/apache/kafka/shell/.nondex/icVJAkcZe+DTNn2UtdWkKM9zz+WjQnZ4qWxc18TgOko=/test_results.html
+INFO: [NonDex] The id of this run is: icVJAkcZe+DTNn2UtdWkKM9zz+WjQnZ4qWxc18TgOko=
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.5/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1s
+63 actionable tasks: 1 executed, 62 up-to-date
